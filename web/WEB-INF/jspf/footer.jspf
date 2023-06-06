@@ -1,0 +1,19 @@
+</div>
+        <script src="recursos/js/jquery.js"></script>
+        <script src="recursos/js/bootbox.min.js"></script>
+        <script src="recursos/js/bootstrap.bundle.min.js"></script>
+        <script src="recursos/js/jquery.min.js"></script>
+        <script>
+            $(".sidebar ul li").on('click', function () {
+                $(".sidebar ul li.active").removeClass('active');
+                $(this).addClass('active');
+            });
+        </script>
+        <script>
+            let btn = document.querySelector(".btn");
+            let sidebar = document.querySelector(".sidebar");
+            
+            btn.onclick = function(){
+                sidebar.classList.toggle("active");
+            };
+        </script>
